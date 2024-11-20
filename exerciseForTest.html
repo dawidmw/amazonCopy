@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  </head>
+
+  <body>
+
+
+    <script>
+
+      // console.log(`Order total: $` + 6 + 2)
+
+      /*
+      let max = 0;
+
+      function getMax(array) {
+        array.forEach((num) => {
+          if (num > max) {
+            max = num;
+          }
+        });
+
+        return max;
+      };
+
+      console.log(getMax([3, 8, 7]));
+      console.log(max);
+      console.log(getMax([5, 3]));
+      */
+
+      
+      // function reverseArray(arr) {
+      //   const result = [];
+
+      //   for (let i = arr.length - 1; i >= 0; i--) {
+      //     result.push(arr[i]);
+      //   }
+
+      //   return result;
+      // };
+
+      // console.log(reverseArray([1, 2, 3, 4, 5]));
+      
+
+      /*
+      products = [{ 
+        name: 'socks',
+        category: 'clothing'
+      }, {
+        name: 'shirt',
+        category: 'clothing'
+      }, {
+        name: 'toaster',
+        category: 'appliance'
+      }]
+ 
+      function groupProducts(products) {
+        const results = {};
+
+        products.forEach((product) => {
+          const name = product.name;
+          const category = product.category;
+
+          if (!results[category]) {
+            results[category] = [product];
+          } else {
+            results[category].push(product);
+          }
+        })
+
+        return results;
+      };
+   
+      console.log(groupProducts(products))
+      */
+
+      /*
+      function generateNumber() {
+        return Math.floor(Math.random() * 10);
+      };
+
+      function generateRandomId() {
+        const numbersGenerated = {};
+        let id = '';
+
+        while (id.length < 3) {
+          const randomNumber = generateNumber();
+          console.log(randomNumber);
+
+          if (numbersGenerated[randomNumber]) {
+            continue;
+          }
+
+          numbersGenerated[randomNumber] = true;
+          id += randomNumber;
+        }
+        
+        return id;
+      };
+
+      const id = generateRandomId();
+      console.log(id);
+      */
+
+      const video = fetch(
+        'https://supersimplebackend.dev/video'
+      );
+
+      console.log(video.title);
+      
+
+    </script>
+  </body>
+</html>
